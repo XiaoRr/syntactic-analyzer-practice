@@ -10,6 +10,13 @@
 #include <stdio.h>
 #include <tchar.h>
 
-
-
 // TODO: 在此处引用程序需要的其他头文件
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <cstdio>
+#include <vector>
+#include <streambuf>  
+#include <cctype>
+#include <cmath>
+//using namespace std;

@@ -139,15 +139,24 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="syntaxError.h" />
+    <ClInclude Include="SyntaxTree.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="词法分析器.h" />
+    <ClInclude Include="语法分析器.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Node.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="syntaxError.cpp" />
+    <ClCompile Include="SyntaxTree.cpp" />
+    <ClCompile Include="词法分析器.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="语法分析器.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

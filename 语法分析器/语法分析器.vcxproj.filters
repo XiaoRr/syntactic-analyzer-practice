@@ -24,12 +24,39 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="词法分析器.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="语法分析器.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SyntaxTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="syntaxError.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="词法分析器.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="语法分析器.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SyntaxTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="syntaxError.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
