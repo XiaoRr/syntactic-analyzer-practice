@@ -95,7 +95,7 @@ bool Syntax_Analysiser::analysis(Synstate state,int father) {
 			}
 			break;
 		case Port_spec:	//port_spec --> port_type Associations ;
-			child = tree.addChild(father, "Port_spec("+getName()+")");
+			child = tree.addChild(father, "Port_spec");
 			analysis(Port_type, child);
 			analysis(Associations, child);
 			match(sem);
