@@ -95,7 +95,7 @@ bool Syntax_Analysiser::analysis(Synstate state,int father) {
 			}
 			break;
 		case Port_spec:	//port_spec --> port_type Associations ;
-			child = tree.addChild(father, "Port_spec");
+			child = tree.addChild(father, "Port_spec("+getName()+")");
 			analysis(Port_type, child);
 			analysis(Associations, child);
 			match(sem);
@@ -197,11 +197,11 @@ bool Syntax_Analysiser::analysis(Synstate state,int father) {
 			break;
 		case Splitter:	//splitter--> => | +=>
 			if (match(eg,false)) {
-				tree.addChild(father, string("=>"));
+				tree.addChild(father, string("Splitter(=>)"));
 				break;
 			}
 			match(aeg);
-			tree.addChild(father, string("+=>"));
+			tree.addChild(father, string("Splitter(+=>)"));
 			break;
 		case Reference:	//reference-->[identifier {:: reference}]
 			if (!trymatch(identifier))return false;
