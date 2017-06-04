@@ -20,13 +20,7 @@ int SyntaxTree::addChild(int father, string child) {
 }
 
 void SyntaxTree::printTree() {
-	for (auto i = 0; i < tree.size(); i++) {
-		cout << i << ' ' << tree[i].name << ' ';
-		for (auto j = 0; j < tree[i].child.size(); j++) {
-			cout << tree[i].child[j] <<  ' ';
-		}
-		cout << endl;
-	}
+	cout << "结果已经输出到out.dot中" << endl;
 	freopen("out.dot", "w", stdout);
 	//文件头
 	cout << "digraph ast{\r\nfontname = \"Microsoft YaHei\";\r\nfontsize = 10;\r\n"

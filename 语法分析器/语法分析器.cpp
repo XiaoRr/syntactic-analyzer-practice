@@ -190,9 +190,14 @@ bool Syntax_Analysiser::analysis(Synstate state,int father) {
 			}
 			child = tree.addChild(father, string("Association(")+tmp+")");
 			analysis(Splitter, child);
-			match(constant, false);
+			if (match(constant, false)) {
+				tmp = "(constant)";
+			}
+			else {
+				tmp = "";
+			}
 			match(access);
-			tree.addChild(child, string("Decimal(" + getName() + ")"));
+			tree.addChild(child, tmp + "Decimal(" + getName() + ")");
 			match(decimal);
 			break;
 		case Splitter:	//splitter--> => | +=>
